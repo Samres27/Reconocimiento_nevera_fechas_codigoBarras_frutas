@@ -1,0 +1,15 @@
+yolo task=segment mode=train epochs=30 data=dataset.yaml model=yolov8m-seg.pt imgsz=640 batch=2
+
+task=segment: Indica que el task es segmentación semántica en lugar de detección de objetos.
+
+mode=train: Modo de entrenamiento.
+
+epochs=30: Número total de épocas de entrenamiento, se repetirá el proceso 30 veces con todo el conjunto de datos.
+
+data=dataset.yaml: Archivo YAML que contiene la información y rutas de los datos de entrenamiento.
+
+model=yolov8m-seg.pt: Ruta y nombre del modelo que se guardará después de entrenar. En este caso usa el backbone pre-entrenado de YOLOv8small.
+
+imgsz=640: Tamaño al cual redimensionar las imágenes de entrada, aquí 640x640.
+
+batch=2: Tamaño de batch, número de imágenes por lote para el entrenamiento.

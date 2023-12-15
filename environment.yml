@@ -1,0 +1,15 @@
+name: Renocimiento_VA_productos
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - easyocr
+  - opencv
+  - imutils
+  - pytorch 
+  - torchvision 
+  - ultralytics
+  - pip 
+  - python-dateutil
+  
